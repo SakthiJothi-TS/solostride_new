@@ -1,103 +1,3 @@
-
-header {
-    width: 100%;
-    height: 10%;
-    background-color:white;
-    font-family: var(--ff-lemon);
-      
-}
-
-header nav {
-    width: 100%;
-    height: 100%;
-    background-color:var(--primary-color); 
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    /* background-color: aqua; */
-}
-
-header  nav .wrapper{
-    width: 90%;
-    height: 100%;
-    font-size: var(--fs-20);
-    background-color:var(--primary-color); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: cadetblue; */
-}
-
-header  nav .wrapper .my_logo {
-    width: 12%;
-    height: 100%;
-    /* background-color: chocolate; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-header  nav .wrapper h4 {
-    font-size: 4opx;
-    color:rgb(0, 0, 0);
-    /* margin-left: -30%; */
-}
-
-
-header  nav .wrapper #nav-btn {
-    display: none;
-}
-   
-
-header  nav .wrapper ul {
-    font-size: var(--fs-20);
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    gap: 80px;
-    list-style: none;
-}
-
-nav .wrapper ul li a.active {
-    text-decoration: underline;
-}
-.blink{
-    background: none;
-    color: #000000;
-    position: relative;
-    gap: 20px;
-}
-.blink::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background: #040404;
-    left: 50%;
-    bottom: 0;
-    transition: all 0.3s ease;
-    gap: 10px;
-}
-.blink:hover::after {
-    width: 100%;
-    left: 0;
-    gap: 30px;
-}
-
-#nav-btn .nav-icon {
-    font-size: 40px;
-    color: black;
-    display: none;
-}
-
-header nav .wrapper label {
-    display: none;
-    font-size:40px;
-}
-
 /*banner starts*/
 
 #banner {
@@ -165,7 +65,7 @@ header nav .wrapper label {
 }
 
 #app .app_wrapper h1 {
-    font-size: var(--fs-46);
+    font-size: var(--fs-36);
     margin-top: 4%;
 
 }
@@ -173,7 +73,7 @@ header nav .wrapper label {
 
 #app .app_wrapper .box_one {
     width: 100%;
-    height: 20%;
+    height: 15%;
     /* background-color: rgb(234, 126, 255); */
     background-color: var(--secondary-color);
     display: flex;
@@ -184,19 +84,18 @@ header nav .wrapper label {
 }
 
 #app .app_wrapper .box_one h4{
-    font-size: var(--fs-36);
+    font-size: var(--fs-28);
     margin-left: 5%;
 }
 
 #app .app_wrapper .box_one ul li {
-    font-size: 30px;
+    font-size: 22px;
     margin-left: 10%;
-    font-family: var(--ff-headlandone);
 }
 
 #app .app_wrapper .box_two {
     width: 100%;
-    height: 20%;
+    height: 15%;
     /* background-color: rgb(141, 126, 255); */
     background-color: var(--secondary-color);
     display: flex;
@@ -207,12 +106,12 @@ header nav .wrapper label {
 }
 
 #app .app_wrapper .box_two h4{
-    font-size: var(--fs-36);
+    font-size: var(--fs-28);
     margin-left: 5%;
 }
 
 #app .app_wrapper .box_two ul li {
-    font-size: var(--fs-32);
+    font-size: var(--fs-22);
     margin-left: 10%;
     width: 82%;
     font-family: var(--ff-headlandone);
@@ -220,7 +119,7 @@ header nav .wrapper label {
 
 #app .app_wrapper .box_three {
     width: 100%;
-    height: 20%;
+    height: 15%;
     /* background-color: rgb(126, 233, 255); */
     background-color: var(--secondary-color);
     display: flex;
@@ -231,12 +130,12 @@ header nav .wrapper label {
 }
 
 #app .app_wrapper .box_three h4{
-    font-size: var(--fs-36);
+    font-size: var(--fs-28);
     margin-left: 5%;
 }
 
 #app .app_wrapper .box_three ul li {
-    font-size: 30px;
+    font-size: var(--fs-22);
     margin-left: 10%;
     width: 85%;
     font-family: var(--ff-headlandone);
@@ -244,7 +143,7 @@ header nav .wrapper label {
 
 #app .app_wrapper .box_four {
     width: 100%;
-    height: 20%;
+    height: 15%;
     background-color: rgb(126, 255, 130);
     background-color: var(--secondary-color);
     display: flex;
@@ -255,12 +154,12 @@ header nav .wrapper label {
 }
 
 #app .app_wrapper .box_four h4{
-    font-size: 30px;
+    font-size: var(--fs-28);
     margin-left: 5%;
 }
 
 #app .app_wrapper .box_four ul li {
-    font-size: var(--fs-32);
+    font-size: var(--fs-22);
     margin-left: 10%;
     width: 82%;
     font-family: var(--ff-headlandone);
@@ -280,7 +179,7 @@ header nav .wrapper label {
     width: 1360px;
 }
 input {
-    font-size: var(--fs-36);
+    font-size: var(--fs-22);
     font-family: var(--ff-headlandone);
     border: none;
     padding: 30px;
@@ -289,7 +188,7 @@ input {
 button {
     background: #ADDA3A;
     border: none;
-    font-size: var(--fs-36);
+    font-size: var(--fs-22);
     font-family: var(--ff-lemon);
     padding: 8px 15px;
     cursor: pointer;
@@ -339,22 +238,22 @@ button {
     margin-right: 3%;
 }
 .footer .footer_wrapper .footer_one ul {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     gap: 30px;
 }
 .footer .footer_wrapper .footer_one ul li {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     
 }
 .footer .footer_wrapper .footer_one ul li a {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     text-decoration: none;
     color: var(--tertiary-color);
     font-family: var(--ff-poppins);
 }
 
 .footer .footer_wrapper .footer_one p a{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     color: var(--tertiary-color);
     list-style: none;
     margin-top: 6%;
@@ -381,15 +280,15 @@ button {
     margin-right: 28%;
 }
 .footer .footer_wrapper .footer_two ul {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     gap: 30px;
 }
 .footer .footer_wrapper .footer_two ul li {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     
 }
 .footer .footer_wrapper .footer_two ul li a {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     text-decoration: none;
     color: var(--tertiary-color);
     font-family: var(--ff-poppins);
@@ -407,20 +306,20 @@ button {
 }
 
 .footer .footer_wrapper .footer_three p{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-poppins);
     color: var(--tertiary-color);
     list-style: none;
 }
 .footer .footer_wrapper .footer_three p a{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-poppins);
     color: var(--tertiary-color);
     /* list-style: none;
     text-decoration: none; */
 }
 .footer .footer_wrapper .footer_three .p1{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-poppins);
     color: var(--tertiary-color);
     text-decoration: none; */
@@ -726,40 +625,40 @@ button {
 
 @media only screen and (max-width:1210px){
     #app .app_wrapper h1{
-        font-size: 40px;
+        font-size: 36px;
     }
     #app .app_wrapper .box_one h4,
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4,{
-        font-size: 32px;
+        font-size: 28px;
     }
 
     #app .app_wrapper .box_one ul li,
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 30px;
+        font-size: 22px;
     }
 }
 
 @media only screen and (max-width:1155px){
     #app .app_wrapper h1{
-        font-size: 40px;
+        font-size: 36px;
     }
  
     #app .app_wrapper .box_one h4,
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     #app .app_wrapper .box_one ul li,
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 28px;
+        font-size: 22px;
     }
 
 
@@ -767,7 +666,7 @@ button {
 
 @media only screen and (max-width:1060px){
     #app .app_wrapper h1{
-        font-size: 40px;
+        font-size: 36px;
     }
    #app .app_wrapper .box_one h4,
     #app .app_wrapper .box_two h4,
@@ -780,20 +679,20 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 26px;
+        font-size: 22px;
     }
 
 }
 
 @media only screen and (max-width:1000px){
     #app .app_wrapper h1{
-        font-size: 38px;
+        font-size: 32px;
     }
     #app .app_wrapper .box_one h4,
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4{
-        font-size: 28px;
+        font-size: 26px;
     }
 
 
@@ -801,7 +700,7 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 24px;
+        font-size: 22px;
     }
 
 
@@ -815,14 +714,14 @@ button {
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     #app .app_wrapper .box_one ul li,
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 24px;
+        font-size: 20px;
     }
 
 }
@@ -835,7 +734,7 @@ button {
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4{
-        font-size: 28px;
+        font-size: 24px;
     }
 
 
@@ -843,7 +742,7 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 22px;
+        font-size: 20px;
     }
 
 }
@@ -862,7 +761,7 @@ button {
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4{
-        font-size: 28px;
+        font-size: 24px;
     }
 
 
@@ -870,7 +769,7 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 22px;
+        font-size: 20px;
     }
 
 
@@ -893,7 +792,7 @@ button {
     #app .app_wrapper .box_two h4,
     #app .app_wrapper .box_three h4,
     #app .app_wrapper .box_four h4{
-        font-size: 26px;
+        font-size: 22px;
     }
 
 
@@ -901,7 +800,7 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 22px;
+        font-size: 20px;
     }
 
 
@@ -932,7 +831,7 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 22px;
+        font-size: 20px;
     }
     #banner {
         height: 80vh;
@@ -1012,7 +911,7 @@ button {
     #app .app_wrapper .box_two ul li,
     #app .app_wrapper .box_three ul li,
     #app .app_wrapper .box_four ul li{
-        font-size: 20px;
+        font-size: 18px;
     }
 
 }
@@ -1130,11 +1029,11 @@ button {
         width: 1080px;
     }
     input {
-        font-size: 32px;
+        font-size: 22px;
         padding: 25px;
     }
     button {
-        font-size: 32px;
+        font-size: 22px;
         padding: 6px 10px;
     }
 }
@@ -1174,11 +1073,11 @@ button {
         width: 940px;
     }
     input {
-        font-size: 28px;
+        font-size: 22px;
         padding: 20px;
     }
     button {
-        font-size: 28px;
+        font-size: 22px;
         padding: 4px 6px;
     }
 }
@@ -1242,11 +1141,11 @@ button {
         width: 620px;
     }
     input {
-        font-size: 24px;
+        font-size: 20px;
         padding: 20px;
     }
     button {
-        font-size: 24px;
+        font-size: 20px;
         padding: 4px 6px;
     }
 }
@@ -1276,11 +1175,11 @@ button {
         width: 540px;
     }
     input {
-        font-size: 22px;
+        font-size: 20px;
         padding: 20px;
     }
     button {
-        font-size: 22px;
+        font-size: 20px;
         padding: 4px 6px;
     }
 }

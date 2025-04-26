@@ -31,6 +31,7 @@
     --fs-32:32px;
     --fs-28:28px;
     --fs-24:24px;
+    --fs-22:22px;
     --fs-20:20px;
     --primary-color:#ADDA3A;
     --secondary-color:#EBFFB7;
@@ -64,7 +65,7 @@ header nav {
 header  nav .wrapper{
     width: 90%;
     height: 100%;
-    font-size: var(--fs-20);
+    font-size: var(--fs-22);
     background-color:var(--primary-color); 
     display: flex;
     justify-content: space-between;
@@ -83,17 +84,22 @@ header  nav .wrapper .my_logo {
 }
 
 header  nav .wrapper h4 {
-    font-size: 20px;
+        font-size: var(--fs-22);
     color:rgb(0, 0, 0);
     /* margin-left: -30%; */
 }
+/* .logo{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+} */
 
 header  nav .wrapper #nav-btn {
     display: none;
 }
 
 header  nav .wrapper ul {
-    font-size: var(--fs-20);
+    font-size: var(--fs-22);
     /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
@@ -110,7 +116,7 @@ header  nav .wrapper ul li a{
     text-decoration: none;
     gap: 30px;
     color: black;
-    font-size: var(--fs-20);
+    font-size: var(--fs-22);
 }
 
 nav .wrapper ul li a.active {

@@ -1,103 +1,4 @@
 
-header {
-    width: 100%;
-    height: 10%;
-    background-color:white;
-    font-family: var(--ff-lemon);
-      
-}
-
-header nav {
-    width: 100%;
-    height: 100%;
-    background-color:var(--primary-color); 
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    /* background-color: aqua; */
-}
-
-header  nav .wrapper{
-    width: 90%;
-    height: 100%;
-    font-size: var(--fs-20);
-    background-color:var(--primary-color); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: cadetblue; */
-}
-
-header  nav .wrapper .my_logo {
-    width: 12%;
-    height: 100%;
-    /* background-color: chocolate; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-header  nav .wrapper h4 {
-    font-size: 4opx;
-    color:rgb(0, 0, 0);
-    /* margin-left: -30%; */
-}
-
-
-header  nav .wrapper #nav-btn {
-    display: none;
-}
-   
-
-header  nav .wrapper ul {
-    font-size: var(--fs-20);
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    gap: 80px;
-    list-style: none;
-}
-
-nav .wrapper ul li a.active {
-    text-decoration: underline;
-}
-.blink{
-    background: none;
-    color: #000000;
-    position: relative;
-    gap: 20px;
-}
-.blink::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 3px;
-    background: #040404;
-    left: 50%;
-    bottom: 0;
-    transition: all 0.3s ease;
-    gap: 10px;
-}
-.blink:hover::after {
-    width: 100%;
-    left: 0;
-    gap: 30px;
-}
-
-#nav-btn .nav-icon {
-    font-size: 40px;
-    color: black;
-    display: none;
-}
-
-header nav .wrapper label {
-    display: none;
-    font-size:40px;
-}
-
 
 /*banner starts*/
 #banner {
@@ -135,7 +36,7 @@ header nav .wrapper label {
 }
 
 #banner .wrapper .banner_content p {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-headlandone);
 }
 
@@ -254,7 +155,7 @@ header nav .wrapper label {
 .benifits .benifits-wrapper-container .benifits-content-container p{
     width: 80%;
     font-family: var(--ff-headlandone);
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     /* background-color: aqua; */
     justify-content: center;
     align-content: center;
@@ -357,7 +258,7 @@ gap: 20px;
 }
 
 #safety .safety_wrapper .safety_content p{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-headlandone);
     width: 90%;
 }
@@ -454,22 +355,22 @@ gap: 20px;
     margin-right: 3%;
 }
 .footer .footer_wrapper .footer_one ul {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     gap: 30px;
 }
 .footer .footer_wrapper .footer_one ul li {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     
 }
 .footer .footer_wrapper .footer_one ul li a {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     text-decoration: none;
     color: var(--tertiary-color);
     font-family: var(--ff-poppins);
 }
 
 .footer .footer_wrapper .footer_one p a{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     color: var(--tertiary-color);
     list-style: none;
     margin-top: 6%;
@@ -497,15 +398,15 @@ gap: 20px;
     margin-right: 28%;
 }
 .footer .footer_wrapper .footer_two ul {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     gap: 30px;
 }
 .footer .footer_wrapper .footer_two ul li {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     
 }
 .footer .footer_wrapper .footer_two ul li a {
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     text-decoration: none;
     color: var(--tertiary-color);
     font-family: var(--ff-poppins);
@@ -529,14 +430,14 @@ gap: 20px;
     list-style: none;
 }
 .footer .footer_wrapper .footer_three p a{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-poppins);
     color: var(--tertiary-color);
     /* list-style: none;
     text-decoration: none; */
 }
 .footer .footer_wrapper .footer_three .p1{
-    font-size: var(--fs-24);
+    font-size: var(--fs-22);
     font-family: var(--ff-poppins);
     color: var(--tertiary-color);
     text-decoration: none; */
