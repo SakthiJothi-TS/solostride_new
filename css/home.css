@@ -395,10 +395,11 @@ button .primary {
     font-size: var(--fs-22);
     width: 100%;
     font-family: var(--ff-headlandone);
-    text-align: start;
+    text-align: justify;
 }
 
 #safety .safety_wrapper .safety_content .btn {
+    width: 160px;
     color: var(--tertiary-color);
     border-radius: 40px;
     font-size: var(--fs-20);
@@ -849,6 +850,8 @@ button .primary {
 .footer .footer_wrapper .footer_one ul {
     font-size: var(--fs-22);
     gap: 30px;
+    list-style: none;
+    margin-right: 30px;
 }
 
 .footer .footer_wrapper .footer_one ul li {
@@ -859,6 +862,7 @@ button .primary {
 .footer .footer_wrapper .footer_one ul li a {
     font-size: var(--fs-22);
     text-decoration: none;
+    list-style: none;
     color: var(--tertiary-color);
     /* font-family: var(--ff-poppins); */
 }
@@ -895,6 +899,8 @@ button .primary {
 .footer .footer_wrapper .footer_two ul {
     font-size: var(--fs-22);
     gap: 30px;
+    list-style: none;
+    margin-right: 30px;
 }
 
 .footer .footer_wrapper .footer_two ul li {
@@ -979,6 +985,141 @@ button .primary {
 
 
 /*media query starts*/
+
+
+/*header starts*/
+
+@media only screen and (max-width: 1496px) {
+    header nav .wrapper ul {
+        gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+
+    header .my_logo {
+        gap: 40px; 
+    }
+
+    header .logo {
+        width: 15%; 
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    header nav .wrapper ul {
+        position: absolute;
+        top: 10vh;
+        width: 30%;
+        left: -100%;
+        height: 80vh;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        background-color: var(--secondary-color);
+        padding: 30px 60px;
+        transition-duration: 0.9s;
+        z-index: 1;
+    }
+
+    header nav .wrapper label {
+        display: block; 
+    }
+
+    #nav-btn:checked ~ ul {
+            left: 0px;
+        }   
+}
+
+@media only screen and (max-width: 768px) {
+    header nav .wrapper {
+        /* align-items: flex-start; */
+    }
+
+    header .my_logo {
+        width: 20%; 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header nav .wrapper {
+        /* align-items: flex-start; */
+    }
+
+    header .my_logo {
+        margin-left: 2%;
+        width: 18%; 
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header .my_logo {
+        width: 25%;
+    }
+
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+    header nav .wrapper {
+        /* align-items: flex-start; */
+    }
+
+    header .my_logo {
+        margin-left: 2%;
+        width: 18%; 
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+    header nav .wrapper ul li a{
+        gap: 35px;
+        font-size: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    header nav .wrapper {
+        /* align-items: flex-start; */
+    }
+
+    header .my_logo {
+        margin-left: 6%;
+        width: 18%; 
+    }
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+    header nav .wrapper ul li a{
+        gap: 40px;
+        font-size: 75%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    header nav .wrapper ul {
+        gap: 40px;
+    }
+    header nav .wrapper ul li a{
+        gap: 40px;
+        font-size: 75%;
+    }
+}
+/*header ends*/
+
+/*media query ends*/
+
 
 /*banner starts*/
 @media only screen and (max-width:1099px) {
@@ -2339,6 +2480,7 @@ button .primary {
     #safety .safety_wrapper .safety_content .btn {
         border-radius: 40px;
         font-size: 14px;
+        width: 120px;
         /* border: none; */
         padding: 6px 10px;
         /* background-color: var(--primary-color);
@@ -2362,6 +2504,7 @@ button .primary {
 }
 
 @media only screen and (max-width:385px) {
+  
     #safety .safety_wrapper .safety_content h1 {
         font-size: 20px;
         width: 140%;
@@ -2398,17 +2541,26 @@ button .primary {
 }
 
 @media only screen and (max-width:350px) {
+    #safety {
+        height: 650px;
+        margin-top: 60px;
+    }
+    #safety .safety_wrapper{
+        flex-direction: column;
+    }
     #safety .safety_wrapper .safety_content h1 {
         font-size: 20px;
-        width: 140%;
-        margin-left: 28%;
+        width: 180%;
+        margin-left: 0%;
+        text-align: left;
         /* width: 100%; */
     }
 
     #safety .safety_wrapper .safety_content p {
         font-size: 14px;
-        width: 140%;
-        margin-left: 28%;
+        width: 180%;
+        margin-left: 0%;
+        text-align: justify;
         /* width: 100%; */
     }
 
@@ -2424,8 +2576,10 @@ button .primary {
 
     #safety .safety_wrapper .safety_img .safe1 {
         width: 60%;
-        height: 35%;
-        margin-left: 40%;
+        height: 65%;
+        margin-left: 10%;
+        margin-top: 30px;
+        text-align: left;
     }
 
     #safety .safety_wrapper .safety_img .safe2 {
@@ -2434,22 +2588,24 @@ button .primary {
 }
 
 @media only screen and (max-width:320px) {
+    
+
     #safety .safety_wrapper .safety_content h1 {
         font-size: 18px;
-        width: 140%;
-        margin-left: 28%;
+        width: 180%;
+        margin-left: 0%;
         /* width: 100%; */
     }
 
     #safety .safety_wrapper .safety_content p {
         font-size: 14px;
-        width: 140%;
-        margin-left: 28%;
+        width: 180%;
+        margin-left: 0%;
         /* width: 100%; */
     }
 
     #safety .safety_wrapper .safety_content .btn {
-        width: 90%;
+        width: 100%;
         border-radius: 40px;
         font-size: 14px;
         padding: 6px 15px;
@@ -2458,8 +2614,8 @@ button .primary {
 
     #safety .safety_wrapper .safety_img .safe1 {
         width: 60%;
-        height: 35%;
-        margin-left: 30%;
+        height: 70%;
+        margin-left: 10%;
     }
 
     #safety .safety_wrapper .safety_img .safe2 {
@@ -2868,18 +3024,29 @@ button .primary {
 }
 
 @media only screen and (max-width:380px) {
+    #tips {
+        height: 960px;
+    }
+    #tips .tips_wrapper {
+        height: 950px;
+    }
+    #tips .tips_wrapper .tips_left,
+    #tips .tips_wrapper .tips_right{
+        height: 450px;
+        flex-direction: column;
+    }
 
     #tips .tips_wrapper .tips_left .tips_content1 h1,
     #tips .tips_wrapper .tips_right .tips_content2 h1 {
         font-size: 16px;
-        /* width: 94%; */
+        width: 104%;
         margin-left: 8%;
     }
 
     #tips .tips_wrapper .tips_left .tips_content1 p,
     #tips .tips_wrapper .tips_right .tips_content2 p {
         font-size: 14px;
-        width: 94%;
+        width: 104%;
         margin-left: 8%;
     }
 
@@ -2891,7 +3058,7 @@ button .primary {
     #tips .tips_wrapper .tips_left .tips_img1 img,
     #tips .tips_wrapper .tips_right .tips_img2 img {
         width: 144%;
-        height: 20vh;
+        height: 25vh;
     }
 
     #tips .tips_wrapper .tips_left .tips_content1 button,
@@ -4187,6 +4354,9 @@ button .primary {
 }
 
 @media only screen and (max-width:340px) {
+    .footer{
+        height: 154vh;
+    }
 
     .footer .footer_wrapper .footer_three .p1 {
         font-size: 14px;

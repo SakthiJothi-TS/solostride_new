@@ -240,6 +240,8 @@ button {
 .footer .footer_wrapper .footer_one ul {
     font-size: var(--fs-22);
     gap: 30px;
+    list-style: none;
+    margin-right: 30px;
 }
 .footer .footer_wrapper .footer_one ul li {
     font-size: var(--fs-22);
@@ -282,6 +284,8 @@ button {
 .footer .footer_wrapper .footer_two ul {
     font-size: var(--fs-22);
     gap: 30px;
+    list-style: none;
+    margin-right: 30px;
 }
 .footer .footer_wrapper .footer_two ul li {
     font-size: var(--fs-22);
@@ -1853,31 +1857,41 @@ button {
             margin-left: 120%;
         }
     }
-
-    @media only screen and (max-width:340px){
+    @media only screen and (max-width:340px) {
+        .footer{
+            height: 150vh;
+        }
     
         .footer .footer_wrapper .footer_three .p1 {
-            font-size:14px;
+            font-size: 14px;
             width: 200%;
             margin-right: 10%;
         }
+    
         .footer .footer_wrapper .footer_three p {
-            font-size:14px;
+            font-size: 14px;
             width: 220%;
             margin-left: 15%;
         }
-        .footer .footer_wrapper .footer_one { 
+    
+        .footer .footer_wrapper .footer_one {
             font-size: 16px;
             margin-left: 6%;
         }
-        .footer .footer_wrapper .footer_one h4 { 
+    
+        .footer .footer_wrapper .footer_one h4 {
             font-size: 16px;
             margin-right: 0%;
             width: 100%;
         }
+    
         .footer .footer_wrapper .footer_three .p3 {
-            font-size:14px;
+            font-size: 14px;
             width: 240%;
+        }
+    
+        .footer_three {
+            margin-top: -35%;
         }
     }
     /*footer ends*/
